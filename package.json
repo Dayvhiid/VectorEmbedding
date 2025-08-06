@@ -7,13 +7,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "word-clustering": "node index.js",
+    "rag-demo": "node demos/ragDemo.js",
+    "create-index": "node demos/ragDemo.js --create-index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@google/genai": "^1.12.0",
+    "@pinecone-database/pinecone": "^3.0.0",
     "compute-cosine-similarity": "^1.1.0",
     "dotenv": "^17.2.1",
     "python-shell": "^5.0.0"
